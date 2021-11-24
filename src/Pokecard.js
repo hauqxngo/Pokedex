@@ -1,6 +1,6 @@
 import React from "react";
 
-const Pokecard = ({ id, name, type, base_experience }) => {
+const Pokecard = ({ id, name, type, exp }) => {
   let imgURL = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
   return (
     <div>
@@ -8,7 +8,7 @@ const Pokecard = ({ id, name, type, base_experience }) => {
       <img src={imgURL} alt={name} />
       <ul>
         <li>Type: {type}</li>
-        <li>EXP: {base_experience}</li>
+        <li>EXP: {exp}</li>
       </ul>
     </div>
   );
